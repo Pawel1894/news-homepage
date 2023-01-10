@@ -13,6 +13,7 @@ module.exports = {
         300: "hsl(236, 13%, 42%)",
         400: "hsl(240, 100%, 5%)",
       },
+      opacity: "hsl(240, 100%, 5%, 0.5)",
     },
     fontFamily: {
       sans: ["Inter", "sans-serif"],

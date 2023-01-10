@@ -3,4 +3,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
+@layer base {
+  @media (min-width: 768px) {
+    #navigation {
+      display: block !important;
+    }
+  }
+}
+
 @tailwind utilities;

@@ -7,6 +7,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link href="./dist/output.css" rel="stylesheet" />
+    <script src="src/app.js" defer></script>
     <title>Frontend Mentor | News homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,16 +27,27 @@
         <img class="w-12" src="../assets/images/logo.svg" />
       </div>
       <div>
-        <img class="cursor-pointer" src="../assets/images/icon-menu.svg" />
-        <!-- <nav>
-          <ul>
-            <li>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
-          </ul>
-        </nav> -->
+        <img
+          id="open-btn"
+          class="md:hidden cursor-pointer peer-checked:hidden"
+          src="../assets/images/icon-menu.svg"
+        />
+        <div id="navigation" class="fixed hidden left-0 top-0 w-screen h-screen bg-opacity md:block">
+          <nav class="fixed right-0 top-0 z-10 bg-neutral-100 w-[70vw] h-[100vh]">
+            <img
+              id="close-btn"
+              class="md:hidden absolute right-6 top-6 z-20 cursor-pointer"
+              src="../assets/images/icon-menu-close.svg"
+            />
+            <ul class="mt-28 ml-6">
+              <li class="cursor-pointer text-2xl text-neutral-400">Home</li>
+              <li class="mt-4 cursor-pointer text-2xl text-neutral-400">New</li>
+              <li class="mt-4 cursor-pointer text-2xl text-neutral-400">Popular</li>
+              <li class="mt-4 cursor-pointer text-2xl text-neutral-400">Trending</li>
+              <li class="mt-4 cursor-pointer text-2xl text-neutral-400">Categories</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
