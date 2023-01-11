@@ -24,13 +24,15 @@
   <body class="mx-4 my-7 md:grid md:place-items-center md:my-20 md:mx-9">
     <header class="mb-8 flex justify-between items-center w-full md:max-w-screen-xl md:mb-0">
       <div>
-        <img class="w-12" src="../assets/images/logo.svg" />
+        <img class="w-12" src="../assets/images/logo.svg" alt="" aria-hidden="" />
       </div>
       <div>
         <img
           id="open-btn"
           class="md:hidden cursor-pointer peer-checked:hidden"
           src="../assets/images/icon-menu.svg"
+          role="button"
+          alt="open mobile menu"
         />
         <div
           id="navigation"
@@ -43,6 +45,8 @@
               id="close-btn"
               class="md:hidden absolute right-6 top-6 z-20 cursor-pointer"
               src="../assets/images/icon-menu-close.svg"
+              role="button"
+              alt="close mobile menu"
             />
             <ul class="mt-28 ml-6 md:mt-0 md:ml-0 md:flex">
               <li
@@ -127,7 +131,7 @@
           </div>
         </aside>
       </div>
-      <section class="flex flex-col gap-6 md:flex-row">
+      <div class="flex flex-col gap-6 md:flex-row">
         <div class="grid gap-3 grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr]">
           <img
             class="object-cover h-full w-full"
@@ -182,7 +186,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
